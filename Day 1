@@ -86,3 +86,27 @@ int main() {
     cout<< sum<<endl << avg;
     return 0;
 }
+//access granted or access denied
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int userId = 1234;
+    const int password = 0000;
+
+    int inputID, inputPassword;
+
+    cout << "Enter your ID here: ";
+    cin >> inputID;
+
+    cout << "Enter your password here: ";
+    cin >> inputPassword;
+
+    bool isGranted = (userId == inputID) && (password == inputPassword);
+
+    
+        cout<< "access granted"<< isGranted << endl;
+        cout<< "access denied"<< !isGranted << endl;
+
+    return 0;
+}
