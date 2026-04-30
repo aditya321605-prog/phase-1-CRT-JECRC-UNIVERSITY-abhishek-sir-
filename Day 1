@@ -71,3 +71,18 @@ int main() {
 
     return 0;
 }
+// take input from users and find sum and average
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int a,b,c;
+    cin>> a>>b>>c;
+    int sum;
+    float avg;
+    sum = a+b+c;
+    avg =sum/3.0;
+    cout<< sum<<endl << avg;
+    return 0;
+}
