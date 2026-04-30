@@ -11,5 +11,22 @@ using namespace std;
      return 0;
      
  }
+// GLOBAL VS LOCAL
 
+#include<iostream>
+using namespace std;
+
+int globalVariable=100;
+int main(){
+    //local variable
+    int userInput;
+    float result;
+    
+    cin >> userInput;
+    result=(double)globalVariable/userInput;
+    
+    cout<<result<<endl;
+    
+    return 0;
+}
    
