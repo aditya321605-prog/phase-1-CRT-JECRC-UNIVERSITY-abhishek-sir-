@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+ int main(){
+     
+     double celcius, fahrenheit;
+     cin>>celcius;
+     fahrenheit=(celcius*9.0/5.0)+32.0;
+     cout<<fahrenheit;
+     
+     return 0;
+     
+ }
+
+   
