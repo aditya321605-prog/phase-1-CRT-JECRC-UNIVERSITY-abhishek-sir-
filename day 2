@@ -54,3 +54,21 @@ int main()
     
     return 0;
 }
+// ternary operator
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int maxnumber;
+
+    cin >> a >> b;
+
+    // ternary operator
+    maxnumber = (a > b) ? a : b;
+
+    cout << maxnumber;
+
+    return 0;
+}
+
