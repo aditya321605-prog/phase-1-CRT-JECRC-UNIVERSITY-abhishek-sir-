@@ -123,3 +123,56 @@ int main()
   
   return 0;
 }          
+/ #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int a = 0;
+//     for(int i=2;i<=n-1;i++){
+//         if(n%i==0){  // i is a factor of n
+//           //  cout<<"composite"<<endl;
+//             a=1;
+//             break;
+//         }
+
+//     } 
+//     if(n==1) cout<<"1 is neither prime nor composite"<<endl;
+    
+//     else if(a==0) cout<<"prime"<<endl;
+//     else cout<<"composite"<<endl;
+//     return 0;
+// }
+//problem 
+//prime number checker 
+#include <iostream>
+using namespace std;
+int main(){
+    
+    int n;
+    cin >> n;
+    bool isprime=true;
+    
+    if(n<2){
+        isprime = false;
+        
+    }else {
+        for (int i=2; i<n; i++){
+            if(n % i==0){
+                isprime=false;
+                break;
+                
+            }
+        }
+    }
+    if(isprime){               // dont change
+        cout<<"prime number";
+        
+    }else {
+        cout<<"not a prime number ";
+        
+    }
+    return 0;
+}
