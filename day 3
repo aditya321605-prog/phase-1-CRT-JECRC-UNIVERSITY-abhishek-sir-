@@ -194,3 +194,21 @@ int main(){
           
     return 0;
 }
+// water jar fill while bcz no. of iteration not given
+#include <iostream>
+using namespace std;
+
+int main() {
+    int current_water = 0;
+    int add;
+
+    while (current_water < 500) {
+        cout << "Glass has " << current_water << " ml. How much to add? ";
+        cin >> add;
+        current_water = current_water + add;
+    }
+
+    cout << "Glass is full with water: " << current_water << " ml";
+
+    return 0;
+}
