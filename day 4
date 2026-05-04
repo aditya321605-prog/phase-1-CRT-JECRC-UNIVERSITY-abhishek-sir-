@@ -61,3 +61,46 @@ int main(){
     }
     return 0;
 }
+// Problem -- 5
+// Print Rectangle
+// // print hollow square;
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin >> n;
+   
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=n;j++){
+//             if(i==1 || i==n || j==1 || j==n){
+//                 cout << "*";
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+// print hollow Rectangle
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    int m;
+    cin>> m;
+   
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=m;j++){
+            if(i==1 || i==n || j==1 || j==m){
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << "\n";
+    }
+}
