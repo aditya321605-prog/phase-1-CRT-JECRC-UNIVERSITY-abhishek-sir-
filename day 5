@@ -121,3 +121,23 @@ int main(){
   
     return 0;
 } 
+//problem -6
+//pointers
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    
+    int age= 24;
+    int *ptr= &age;
+    
+    cout<<age << "\n";
+    cout<< ptr<<"\n";
+    cout<< *ptr;
+    
+    //age= 28
+    *ptr = 28;
+    cout<<*ptr;
+    
+}
