@@ -50,3 +50,47 @@ int main(){
   cout << area ;
     return 0;
 }
+// //  problem 4.1  no argunment no return type;
+// #include<bits/stdc++.h>
+// using namespace std;
+// void stringmsg( string message){        
+//     cout << message ;
+// }
+// int main(){
+    
+//   stringmsg( "ting tong");
+//     return 0;
+// }
+//  problem 4.2  argunment no return type;
+// #include<bits/stdc++.h>
+// using namespace std;
+// void stringmsg( string message){        
+//     cout << message ;
+// }
+// int main(){
+    
+//   stringmsg( "ting tong");
+//     return 0;
+// }
+// //  problem 4.3   no argunment return type;
+// #include<bits/stdc++.h>
+// using namespace std;
+// int ticketno(){        
+//     return 101;
+// }
+// int main(){
+    
+//  cout << ticketno();
+//     return 0;
+// }
+//problem 4.4 // argunment return type
+#include<bits/stdc++.h>
+using namespace std;
+int conversion( int amountinusd){        
+    return amountinusd/100;
+}
+int main(){
+    
+  cout << conversion(100);
+    return 0;
+} 
