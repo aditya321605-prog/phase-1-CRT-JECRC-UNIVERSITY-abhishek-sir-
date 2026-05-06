@@ -1,1 +1,41 @@
 
+// // swapping the values
+// #include <iostream>
+// using namespace std;
+// void swap(int *x ,int *y){
+//   int temp = *x;
+//      *x=*y;
+//      *y = temp;
+//     return;
+    
+// }
+// int main()
+// {
+//     int a;
+//     int b;
+//     cin>> a; 
+//     cin>>b;
+//      swap(&a,&b);
+//      cout << a << "  " << b ;
+      
+//     return 0;
+// }
+// default argunments
+// #include <iostream>
+// using namespace std;
+// int area(int x,int y ){
+  
+//     return  x*y;
+    
+// }
+// int main()
+// {
+//   //  int a;
+   
+//  //   cin>> a; 
+//     int result = area(10,3);//dont take default argunments
+//   //int result =   area(a);
+//      cout << result;
+      
+//     return 0;
+// }
