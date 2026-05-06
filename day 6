@@ -138,4 +138,21 @@ int main(){
     return 0;
    
 }
+#include <iostream>
 
+using namespace std;
+class publicpark{
+    public :
+    
+    void enter(){
+        cout << "anyone can enter the park" ;
+    }
+};
+
+
+int main(){
+    publicpark p;
+    p.enter();
+    
+    
+    return 0;
