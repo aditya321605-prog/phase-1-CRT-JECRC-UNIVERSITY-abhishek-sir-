@@ -111,3 +111,31 @@ int main(){
    settemp("eco");   // to 24
    settemp("turbo"); // to 18
 }
+// class and objects
+#include <iostream>
+
+using namespace std;
+class student{
+    public :
+    string name;
+    int age;
+    void introduce(){
+        cout << "name of person" << name << "age of person" << age ;
+    }
+};
+
+
+int main(){
+    student s1;
+    s1.name = "aditya";
+    s1.age = 21;
+    
+   s1.introduce();
+   student s2 ;
+   s2.name ="prateek ";
+   s2.age = 22 ;
+   s2.introduce();
+    return 0;
+   
+}
+
