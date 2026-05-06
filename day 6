@@ -84,3 +84,30 @@ int main(){
     int totalamount =amount(a,b);
     cout << totalamount ;
 }
+#include <iostream>
+#include <string>
+using namespace std;
+
+void settemp(int temp = 22){
+    cout << temp << endl;
+}
+
+void settemp(double x){
+    cout << x << endl;
+}
+
+void settemp(string mode){
+    if(mode == "eco"){
+        cout << "temp set to 24" << endl;
+    }
+    else if(mode == "turbo"){
+        cout << "temp set to 18" << endl;
+    }
+}
+
+int main(){
+   settemp();        // default value 22
+   settemp(20.5);    // double
+   settemp("eco");   // to 24
+   settemp("turbo"); // to 18
+}
