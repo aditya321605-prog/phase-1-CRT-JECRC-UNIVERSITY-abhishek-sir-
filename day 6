@@ -61,3 +61,26 @@ int main(){
     updatebyreference(original);
     cout << original << endl;   // now 500
 }
+//cofee billing 
+#include<iostream>
+using namespace std;
+int amount(int x,int y){
+    
+    return x*y;
+    
+    
+}
+
+
+
+int main(){
+    int  a;
+    cout << "no of coffee";
+    cin >> a; 
+  int b;
+  cout << "price of one cofee";
+  cin >> b;
+   
+    int totalamount =amount(a,b);
+    cout << totalamount ;
+}
