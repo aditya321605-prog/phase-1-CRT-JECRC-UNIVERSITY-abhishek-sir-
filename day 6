@@ -39,3 +39,25 @@
       
 //     return 0;
 // }
+#include<iostream>
+using namespace std;
+
+void updatebyvalue(int a){
+    a = 500;
+}
+
+void updatebyreference(int &a){
+    a = 500;
+}
+
+int main(){
+    int original = 100;
+    
+    cout << original << endl;   // 100
+    
+    updatebyvalue(original);
+    cout << original << endl;   // still 100
+    
+    updatebyreference(original);
+    cout << original << endl;   // now 500
+}
