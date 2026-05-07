@@ -1,8 +1,9 @@
-//problem--1
+//problem--7
 //access specifier
 //7.2--public
-// #include<iostream>
-// using namespace std;
+
+ #include<iostream>
+ using namespace std;
 // class bankaccount{
     
 //   private:
@@ -18,7 +19,8 @@
 //     bankaccount myaccount;
 //     myaccount.showbalance();
 // }
-//problem--1
+=============================================================================================================================
+//problem--7
 //access specifier
 //7.2--public
 #include<iostream>
@@ -40,7 +42,12 @@ int main(){
     child obj1;
     obj1.accessofsecretcode();
 }
-// problem 2--
+==================================================================================================================================
+==================================================================================================================================
+                                                CONSTRUCTORS
+==================================================================================================================================
+==================================================================================================================================
+// problem 2-- 2.1 DEFAULT CONSTRUCTOR
 // constructors
 // types -- 2.1--default
 //  2.2 --parameterized
@@ -72,10 +79,12 @@ int main(){
     
     obj1.showdetails();
    
-    return 0;
-   
+ return 0;  
 }
-// problem 2--
+
+===========================================================================================================================
+
+// problem 2.2-- Parameterized Constructors
 // constructors
 // types -- 2.1--default
 //  2.2 --parameterized
@@ -109,3 +118,4 @@ int main(){
     return 0;
    
 }
+
