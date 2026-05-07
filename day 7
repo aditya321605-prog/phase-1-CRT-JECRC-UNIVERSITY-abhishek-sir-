@@ -75,3 +75,37 @@ int main(){
     return 0;
    
 }
+// problem 2--
+// constructors
+// types -- 2.1--default
+//  2.2 --parameterized
+//2.3 --copy
+#include <iostream>
+
+using namespace std;
+class student{
+    public:
+    string Name;
+    int id;
+   //constructors
+   student(string studentName,int studentid){
+      Name = "aditya";
+      id = 1234;
+   }
+   
+   public :
+  void showdetails(){
+       cout << " name is" << Name << "its id is" << id ;
+   }
+};
+    
+
+int main(){
+    student obj1("aditya",1234);
+   
+    
+    obj1.showdetails();
+   
+    return 0;
+   
+}
