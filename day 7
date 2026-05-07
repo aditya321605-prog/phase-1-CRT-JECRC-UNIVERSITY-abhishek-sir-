@@ -40,3 +40,38 @@ int main(){
     child obj1;
     obj1.accessofsecretcode();
 }
+// problem 2--
+// constructors
+// types -- 2.1--default
+//  2.2 --parameterized
+//2.3 --copy
+#include <iostream>
+
+using namespace std;
+class wificonnection{
+    public:
+   string networkName;
+   string password;
+   //constructors
+   wificonnection(){
+       networkName = "aditya";
+       password = " heyy hello";
+   }
+   
+   public :
+  void showdetails(){
+       cout << "network name is" << networkName << "its password is" << password ;
+   }
+};
+    
+
+int main(){
+    wificonnection obj1;
+    obj1.networkName = "hey";
+    obj1.password = "abcd";
+    
+    obj1.showdetails();
+   
+    return 0;
+   
+}
