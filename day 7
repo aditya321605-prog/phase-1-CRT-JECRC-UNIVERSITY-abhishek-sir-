@@ -157,3 +157,11 @@ int main() {
 }
 
 ======================================================================================
+// problem 4 
+// abstraction
+// abstraction means hiding the implemantation and showing only the necesssary /essential
+//features to the users
+//abstract class -- class cannot be intialised and it is formed using
+//the abstarct keyword
+//abstract method --there is no initialised of the abstract method
+//
