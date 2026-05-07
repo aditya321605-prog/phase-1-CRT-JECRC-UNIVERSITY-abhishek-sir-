@@ -1,0 +1,42 @@
+//problem--1
+//access specifier
+//7.2--public
+// #include<iostream>
+// using namespace std;
+// class bankaccount{
+    
+//   private:
+//   int balance=5000;
+   
+//     public:
+//     void showbalance(){
+//         cout<<"balance in your account is:"<< balance;
+        
+//     }
+// };
+// int main(){
+//     bankaccount myaccount;
+//     myaccount.showbalance();
+// }
+//problem--1
+//access specifier
+//7.2--public
+#include<iostream>
+using namespace std;
+class parent{
+    protected:
+   
+   int secretcode = 1234;
+};
+class child : public parent{
+    public:
+    void accessofsecretcode() {
+        cout << "secretcode of the locker" << secretcode;
+    }
+};
+   
+   
+int main(){
+    child obj1;
+    obj1.accessofsecretcode();
+}
