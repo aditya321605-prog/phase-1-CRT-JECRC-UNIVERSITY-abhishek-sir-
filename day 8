@@ -1,0 +1,65 @@
+// #include<iostream>
+// using namespace std;
+
+// //problem -- 1
+// // inheritance
+// // types -- 1.1 single inheritance
+// class vehicle {
+//     public :
+//     void start() {
+//         cout << "vehicle starts" << "\n";
+        
+//     }
+// };
+// class car :public vehicle{
+//     public:
+//     void drive(){
+//         cout << "car is running" << "\n";
+        
+//     }
+// };
+
+// int main(){
+//     car obj1;
+//     vehicle obj2;
+//     obj1.drive();
+//     obj1.start();
+//     obj2.start();
+// }
+// #include<iostream>
+// using namespace std;
+
+// //problem -- 1
+// // inheritance
+// // types -- 1.2 multilevel inheritance
+// class vehicle {
+//     public :
+//     void start() {
+//         cout << "vehicle starts" << "\n";
+        
+//     }
+// };
+// class car :public vehicle{
+//     public:
+//     void drive(){
+//         cout << "car is running" << "\n";
+        
+//     }
+// };
+// class speedometer :public car{
+//     public : 
+//     void speed(){
+//         cout <<"car is running at 60 km/h";
+//     }
+// };
+
+// int main(){
+//     speedometer obj1;
+//     obj1.speed();
+//     obj1.drive();
+//     obj1.start();
+    
+   
+    
+    
+// }
