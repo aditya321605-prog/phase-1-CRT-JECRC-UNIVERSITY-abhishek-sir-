@@ -103,3 +103,38 @@ int main(){
     
 }
 =============================================================================
+#include<iostream>
+using namespace std;
+
+//problem -- 1
+// inheritance
+// types -- 1.4 multiple inheritance
+class parent1 {
+    public :
+   void givememoney(){
+        cout << "mummy psa do mujhe";
+        
+    }
+        
+    
+};
+class parent2 {
+    public:
+   void givememoney(){
+        cout << "papa psa do mujhe" << "\n";
+        
+    }
+};
+class child :public parent1,public parent2 {
+    //no logic
+    
+};
+
+int main(){
+    child obj1;
+   // obj1.givememoney();
+    obj1.parent1::givememoney();
+    obj1.parent2::givememoney();
+}
+
+==================================================
