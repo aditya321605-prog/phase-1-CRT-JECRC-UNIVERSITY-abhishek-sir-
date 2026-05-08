@@ -232,3 +232,21 @@ int main() {
     c1.sound();
     d1.sound();
 }
+=====================================================================
+class parent{
+    public:
+  virtual  void sum(int a,int b){// virtual = same function name same parameter 
+        cout << a+b << "parent";
+    }
+};
+class child : / funtion overiding
+public parent{
+    public :
+    void sum(int a,int b) override{
+        cout << a+b<< "child";
+    }
+};
+int main(){
+    child c;
+    c.sum(10,20);
+}
