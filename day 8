@@ -26,6 +26,7 @@
 //     obj1.start();
 //     obj2.start();
 // }
+==========================================================================
 // #include<iostream>
 // using namespace std;
 
@@ -63,3 +64,42 @@
     
     
 // }
+==================================================================
+#include<iostream>
+using namespace std;
+
+//problem -- 1
+// inheritance
+// types -- 1.3 heirachial inheritance
+class vehicle {
+    public :
+    void start() {
+        cout << "vehicle starts" << "\n";
+        
+    }
+};
+class car :public vehicle{
+    public:
+    void drive(){
+        cout << "car is running" << "\n";
+        
+    }
+};
+class bike :public vehicle{
+    public : 
+    void speed(){
+        cout <<"bike  is running at 60 km/h";
+    }
+};
+
+int main(){
+    bike obj1;
+   car obj2;
+   obj1.speed();
+   obj1.start();
+   obj2.drive();
+   obj2.start();
+    
+    
+}
+=============================================================================
