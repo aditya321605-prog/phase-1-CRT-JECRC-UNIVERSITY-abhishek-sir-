@@ -90,3 +90,91 @@ int main() {
 
     return 0;
 }
+=============================
+=================================================================
+//problem-3
+//introduction to arrays + traversal +memory layout
+// #include<iostream>
+// using namespace std;
+// void traversal(int arr[],int size){
+//     for(int i=0;i<size;i++){
+//         cout<< arr[i]<<" ";// void bcz cout
+//     }
+// }
+
+// int main() {
+//     int arr[] = {10,20,30,40,50};
+//     traversal(arr,5);
+// }
+
+//problem-4
+//introduction to arrays + traversal +memory layout
+// #include<iostream>
+// using namespace std;
+// void memoryaddress(int arr[],int size){
+//     for(int i=0;i<size;i++){
+//         cout<< &arr[i]<<" ";// void bcz cout
+//     }
+// }
+==================================================================
+// int main() {
+//     int arr[] = {10,20,30,40,50};
+//     memoryaddress(arr,5);
+// }
+// #include<iostream>
+// using namespace std;
+// void memoryaddress(int arr[],int size){
+//     for(int i=0;i<size;i++){
+//         cout<< &arr[i]<<" ";// void bcz cout
+//     }
+// }
+=================================================
+// int main() {
+//     int arr[] = {10,20,30,40,50};
+//     memoryaddress(arr,5);
+// }
+//problem--5 linear search
+#include<iostream>
+using namespace std;
+int linearsearch(int arr[],int size,int targetvalue){
+    for(int i=0;i<size;i++){
+        if(arr[i] == targetvalue){
+            return i;
+        }
+    }
+    return -1;
+}
+int main() {
+    int arr[] = {10,20,30,40,50};
+   int index = linearsearch(arr,5,40);
+    cout << index;
+}
+=========================================================================
+#include<iostream>
+using namespace std;
+void printarray(int arr[],int size){
+    for(int i=0;i<size;i++){
+        cout << arr[i] <<" " ;
+        
+        
+        
+    }
+
+         
+}
+void insertelement(int arr[],int &size,int index,int value){
+    for(int i=size;i>index;i--){
+        arr[i]= arr[i-1];
+            
+        }
+        arr[index] = value;
+        size++;
+    
+      
+}
+int main() {
+    int arr[] = {10,20,30,40,50};
+    int size = 5;
+   insertelement(arr,size,2,25);
+    printarray(arr,size);
+}
