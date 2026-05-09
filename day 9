@@ -1,0 +1,49 @@
+#include<iostream>
+// using namespace std;
+
+// // Base class
+// class appliance {
+// public:
+//     virtual void turnon() {
+//         cout << "Appliance is starting up" << "\n";
+//     }
+
+//     virtual void work() = 0;
+// };
+
+// // Derived class: Fan
+// class fan : public appliance {
+// public:
+//     void turnon() override {
+//         cout << "Fan blades are moving slowly...." << "\n";
+//     }
+
+//     void work() override {
+//         cout << "Fan is cooling the room" << "\n";
+//     }
+// };
+
+// // Derived class: Toaster
+// class toaster : public appliance {
+// public:
+//     void work() override {
+//         cout << "Toaster is heating up the bread" << "\n";
+//     }
+// };
+
+// int main() {
+
+//     appliance* kitchenapp;
+
+//     fan myfan;
+//     kitchenapp = &myfan;
+//     kitchenapp->turnon();
+//     kitchenapp->work();
+
+//     toaster mytoast;
+//     kitchenapp = &mytoast;
+//     kitchenapp->turnon();
+//     kitchenapp->work();
+
+//     return 0;
+// }
