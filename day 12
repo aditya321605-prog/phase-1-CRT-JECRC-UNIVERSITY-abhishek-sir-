@@ -1,0 +1,58 @@
+// PROBLEM 1 - STACK IMPLEMENATATION VIA STACK
+
+
+#include <iostream>
+using namespace std;
+#include <stack>
+
+int main()
+{
+  int arr[] ={10,20,30,40,50};
+  int n = 5;
+  
+  stack<int> st;
+  // java -- stack <Integer > = new stack<>();
+  
+    for (int i = 0 ; i<n; i++ ){
+        st.push(arr[i]);
+    }
+    
+    for (int i = 0 ; i<n; i++ ){
+        arr[i] = st.top();
+        st.pop();
+    }
+    cout<<"Reversed Array.."<<"\n";
+    
+    for(int i = 0 ; i<n; i++ ){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
+
+---------------------------------------------------
+// VALID PARENTHESIS
+
+class Solution {
+public:
+    bool isValid(string s) {
+     stack<char> st;
+     for(char c : s){
+        if (c=='('){
+            st.push(')');
+        }
+        else if (c=='{'){
+            st.push('}');
+        }
+        else if (c=='['){
+            st.push(']');
+        }
+        else {
+            if(st.empty() || st.top()!=c ){
+                    return false;
+                 }
+                 st.pop();
+        }
+     } 
+     return st.empty();    
+    }
+};
